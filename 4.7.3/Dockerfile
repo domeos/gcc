@@ -9,7 +9,7 @@ WORKDIR /opt
 RUN yum -y install wget bzip2 && \
     yum -y install gcc gcc-c++ gdb make && \
     wget http://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.bz2 && \
-    tar -jxvf gcc-${GCC_VERSION}.tar.gz && \
+    tar -jxvf gcc-${GCC_VERSION}.tar.bz2 && \
     cd gcc-${GCC_VERSION} && \
     ./contrib/download_prerequisites && cd .. && \
     mkdir gcc-build-${GCC_VERSION} && cd gcc-build-${GCC_VERSION} && \
